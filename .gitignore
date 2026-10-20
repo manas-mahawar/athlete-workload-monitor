@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
