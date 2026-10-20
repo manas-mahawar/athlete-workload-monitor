@@ -52,7 +52,7 @@ export function StatTile({ label, value, detail }: { label: string; value: React
 export function LoadingState() {
   return (
     <div role="status" className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm text-slate-500">
-      Loading dataâ€¦
+      Loading data...
     </div>
   )
 }
