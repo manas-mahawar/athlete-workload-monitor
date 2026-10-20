@@ -36,12 +36,12 @@ function OverviewContent({ overview }: { overview: Overview }) {
         <StatTile
           label="Athletes"
           value={active + injured + inactive}
-          detail={`${active} active · ${injured} injured · ${inactive} inactive`}
+          detail={`${active} active Â· ${injured} injured Â· ${inactive} inactive`}
         />
         <StatTile
           label="Open alerts"
           value={openAlerts}
-          detail={`${alerts.open_high} high · ${alerts.open_moderate} moderate · ${alerts.open_low} low`}
+          detail={`${alerts.open_high} high Â· ${alerts.open_moderate} moderate Â· ${alerts.open_low} low`}
         />
         <StatTile
           label="Open injuries"
@@ -51,7 +51,7 @@ function OverviewContent({ overview }: { overview: Overview }) {
         <StatTile
           label="Total training load"
           value={formatNumber(workload.total_load)}
-          detail={`AU across ${workload.records} records · avg RPE ${formatNumber(workload.average_rpe, 2)}`}
+          detail={`AU across ${workload.records} records Â· avg RPE ${formatNumber(workload.average_rpe, 2)}`}
         />
       </div>
 
@@ -89,8 +89,8 @@ function OverviewContent({ overview }: { overview: Overview }) {
           title="Unresolved high-risk alerts"
           subtitle="From vw_high_risk_alerts, highest ACWR first"
           actions={
-            <a href={href.alerts} className="text-xs font-medium text-blue-600 hover:underline">
-              All alerts →
+            <a href={href.alerts} className="text-xs font-medium text-emerald-700 hover:underline">
+              All alerts â†’
             </a>
           }
         >
@@ -101,11 +101,11 @@ function OverviewContent({ overview }: { overview: Overview }) {
               {overview.high_risk_alerts.map((alert) => (
                 <li key={`${alert.athlete_id}-${alert.alert_date}`} className="flex items-center justify-between gap-3 py-3">
                   <div>
-                    <a href={href.athlete(alert.athlete_id)} className="text-sm font-medium text-slate-900 hover:text-blue-600">
+                    <a href={href.athlete(alert.athlete_id)} className="text-sm font-medium text-slate-900 hover:text-emerald-700">
                       {alert.athlete_name}
                     </a>
                     <div className="text-xs text-slate-500">
-                      {alert.sport_name} · {formatDate(alert.alert_date)}
+                      {alert.sport_name} Â· {formatDate(alert.alert_date)}
                     </div>
                   </div>
                   <div className="text-right">

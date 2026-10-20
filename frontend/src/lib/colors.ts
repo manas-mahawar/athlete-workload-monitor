@@ -2,7 +2,7 @@ import type { AthleteStatus, RiskLevel, Severity } from '../api/types'
 
 // Recharts draws SVG, so it needs real colour values rather than Tailwind
 // classes. These hex codes are the matching Tailwind colours.
-export const CHART_COLOR = '#2563eb' // blue-600
+export const CHART_COLOR = '#059669' // emerald-600
 export const GRID_COLOR = '#e2e8f0' // slate-200
 export const AXIS_COLOR = '#64748b' // slate-500
 export const SAFE_RANGE_COLOR = '#16a34a' // green-600

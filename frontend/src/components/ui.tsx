@@ -52,7 +52,7 @@ export function StatTile({ label, value, detail }: { label: string; value: React
 export function LoadingState() {
   return (
     <div role="status" className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm text-slate-500">
-      Loading data…
+      Loading dataâ€¦
     </div>
   )
 }
@@ -86,7 +86,7 @@ const TONE_CLASSES: Record<Tone, string> = {
   green: 'bg-green-50 text-green-700 ring-green-200',
   amber: 'bg-amber-50 text-amber-800 ring-amber-200',
   red: 'bg-red-50 text-red-700 ring-red-200',
-  blue: 'bg-blue-50 text-blue-700 ring-blue-200',
+  blue: 'bg-teal-50 text-teal-700 ring-teal-200',
   gray: 'bg-slate-100 text-slate-600 ring-slate-200',
 }
 
@@ -128,4 +128,3 @@ export function Select({
     </label>
   )
 }
-
